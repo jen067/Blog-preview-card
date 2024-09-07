@@ -6,7 +6,7 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/jen067/QR-code-component.git)
+- Solution URL: [Add solution URL here](https://github.com/jen067/Blog-preview-card)
 - Live Site URL: [Add live site URL here](https://jen067.github.io/QR-code-component/)
 
 ## My process
