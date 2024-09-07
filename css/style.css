@@ -1,0 +1,115 @@
+/* CSS RESET */
+
+/* Box sizing */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html{
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Romeve default margin */
+body,h2,p{
+    margin: 0;
+}
+
+/* Remove tag a default style */
+a{
+    text-decoration: auto;
+    color: inherit;
+}
+
+/* Make img fit the container */
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* CSS Variable */
+:root{
+    /* Colors */
+    --clr--bg: hsl(47, 88%, 63%);
+    --clr--cd: hsl(0, 0%, 100%);
+    --clr-gray--500: hsl(0, 0%, 42%);
+    --clr--grap--950: hsl(0, 0%, 7%);
+
+    /* Font */
+    --ff--figtree: 'Figtree', sans-serif;
+    --ff--800: 800;
+    --ff--600: 600;
+    --ff--400: 400;
+
+    /* Padding */
+    --padding--sm: 1rem;
+    --padding--md: 1.5rem;
+    --padding--lg: 2rem;
+}
+
+/* Main Styling */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding--sm);
+    background-color: var(--clr--bg);
+    font-family: var(--ff--figtree);
+    padding: var(--padding--sm);
+    min-height: 100svh;
+}
+.blog-card{
+    background-color: var(--clr--cd);
+    max-width: 27rem;
+    padding: var(--padding--sm);
+    padding-bottom: var(--padding--lg);
+    border: 1px solid var(--clr--grap--950);
+    border-radius: 15px;
+    box-shadow: 10px 10px var(--clr--grap--950);
+}
+.blog-card>*+*{
+    margin-top: var(--padding--sm);
+}
+.blog-illustration{
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+}
+.blog-tag{
+    display: inline-block;
+    background-color: var(--clr--bg);
+    font-weight: var(--ff--800);
+    font-size: .8rem;
+    padding: .4rem .8rem;
+    border-radius: 5px;
+}
+.blog-date{
+    font-size: .9rem;
+    font-weight: 600;
+}
+.blog-title{
+    display: block;
+    font-weight: bold;
+    transition: color .8s ease-out;
+}
+.blog-title:hover{
+    color: var(--clr--bg);
+}
+.blog-paragraph{
+    color: var(--clr-gray--500);
+    font-size: 1.2rem;
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: var(--ff--600);
+}
+.author-img{
+    height: 2.5em;
+}
